@@ -17,7 +17,7 @@
 # Now you can point your browser to http://localhost:8000
 
 FROM ubuntu:latest
-
+FROM python:3.9-slim-buster
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages \
